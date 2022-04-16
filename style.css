@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;0,900;1,400&display=swap');
+
+* {
+    box-sizing: border-box;
+  }
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: gainsboro;
+}
+
+a:visited {
+    text-decoration: none;
+  }
+
+.container, #order-form {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#nav  {
+    display: block;
+    background-color: blue;
+    color: white;
+    padding: 0 auto;
+    text-align: center;
+}
+
+ a {
+     color: white;
+ }
+
+
+#nav > ul > li {
+    list-style: none;
+    font-size: larger;
+    font-weight: bold;
+    text-decoration: none;
+}
+ 
+ul {
+    margin-bottom: 0;
+}
+
+.banner {
+    background-image: url("/images/espresso.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 300px;
+    width: 100%;
+    margin-bottom: 30px;
+
+}
+
+#order-form {
+    width: 90%;
+}
+
+.order, .drink-form, #drink-option, #drink-size {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#button {
+    margin: 10px 0;
+}
+
+footer  {
+    background-color: blue;
+    height: 3rem;
+}
+
+
+ @media screen and (min-width: 465px) {
+    .container {
+        display: grid;
+        margin: 0 auto;
+        grid-template-columns: 1fr 1fr 1;
+        grid-template-rows: 4em 1fr 1 4em;
+        grid-template-areas: 
+        "nav nav nav"
+        "banner banner banner"
+        "form form form"
+        "footer footer footer";
+    }
+    
+    #nav, ul {
+        grid-area: nav;
+        display: flex;
+        height: 4em;
+        flex-direction: row;
+        align-items: center;
+
+    }
+
+    ul > li {
+        margin: 0 40px;
+    }
+    
+    
+    .banner {
+        grid-area: banner;
+       
+    }
+    
+    #order-form {
+        grid-area: form;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-area: 
+        "order order"
+        "drink drink";
+    }
+    
+    .order {
+        grid-area: order;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    
+    .drink-form {
+        grid-area: drink;
+    }
+    
+    footer {
+        grid-area: footer;
+    }
+}
+

@@ -4,9 +4,73 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>FLOOD COFFEE</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div class="container">
+        <div id="nav">
+            <h1>FLOOD COFFEE</h1>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#order-form">Menu</a></li>
+                <li><a href="#">About</li>
+                <li><a href="#">Locations</li>
+                <li><a href="#">Order Now</a></li>
+            </ul>
+        </div>
+        <div class="banner">
+            
+        </div>
+        <section id="order-form" method="POST">
+            <form class="order">
+                <h1>Order Here</h1>
+                <label for="first-name">First Name:</label>
+                <input type="text" id="first-name">
+                <label for="last-name">Last Name:</label>
+                <input type="text" id="last-name">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" required>
+            </form>
+        
+            <form class="drink-form" method="POST">
+                <div id="drink-option">
+                    <h1>Drink Option</h1>
+                    <label for="espresso">Espresso</label>
+                    <input type="radio" id="espresso" value="espresso">
+                    <label for="latte">Latte</label>
+                    <input type="radio" id="latte" value="latte">
+                    <label for="cappuccino">Cappuccino</label>
+                    <input type="radio" id="cappuccino" value="cappuccino">
+                    <label for="flat-white">Flat White</label>
+                    <input type="radio" id="flat-white" value="flat white">
+                    <label for="cortado">Cortado</label>
+                    <input type="radio" id="cortado" value="cortado">
+                    <label for="mocha">Mocha</label>
+                    <input type="radio" id="mocha" value="mocha">
+                    <label for="americano">Americano</label>
+                    <input type="radio" id="americano" value="americano">  
+                </div>
+                <div id="drink-size">
+                    <h1>Drink Size</h1>
+                    <label for="size">Small</label>
+                    <input type="checkbox" id="size">
+                    <label for="medium">Medium</label>
+                    <input type="checkbox" id="medium">
+                    <label for="large"> Large</label>
+                    <input type="checkbox" id="large">
+                    <label for="x-large">X-large</label>
+                    <input type="checkbox" id="x-large">
+                </div>
+                <div id="button">
+                    <button>Submit</button>
+                </div>
+            </form>
+        </section>
+        <footer>
+
+        </footer>
+    </div>
 </body>
 </html>
